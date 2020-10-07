@@ -168,6 +168,7 @@ body{
     }
     .nav .links{
         background: none;
+        cursor:pointer;
     }
     .nav .links:hover{
         transform: scale(1.1);
