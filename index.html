@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Restaurant</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="nav">
+            <div class="links">TACOS</div>
+            <div class="links">BEERS</div>
+            <div class="links">WINES</div>
+            <div class="links">DESSERTS</div>
+            <div class="links">RESERVATION</div>
+        </div>
+        <div class="top">
+            <div class="l">
+                <p>Terry's Taco Joint</p>
+                <h3>Pretty Good Tacos!</h3>
+            </div>
+            <div class="r">
+                <div class="r1">
+                    <p>$1.99</p>
+                    <h3>Tacos</h3>
+                </div>
+                <div class="r2">
+                    <p>$3.99</p>
+                    <h3>Kombucha</h3>
+                </div>
+            </div>
+        </div>
+        <div class="items">
+            <div class="item">
+                <span class="icon">🌮</span>
+                <p class="name">Tacos</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            </div>
+            <div class="item">
+                <span class="icon">🍺</span>
+                <p class="name">Beer</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            </div>
+            <div class="item">
+                <span class="icon">🍷</span>
+                <p class="name">Wine</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            </div>
+            <div class="item">
+                <span class="icon">🎵</span>
+                <p class="name">Music</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            </div>
+        </div>
+        <div class="center" >
+            <img src="./img/taco.png" alt="">
+            <div class="desc">
+                <h3>Featured Taco</h3>
+                <p>Slim Profile, easy to hold and loaded with cheese.
+                    This is the one you have been waiting for</p>
+                    <br>
+                    <a href="#">Learn more →</a>
+            </div>
+        </div>
+        <div class="grams">
+            <div class="left"> .</div>
+            <h2>Instant Grams</h2>
+            <div class="right">.</div>
+        </div>
+        <div class="images">
+            <div id="0"class="pic" onclick=tog(0)></div>
+            <div id="1"class="pic" onclick=tog(1)></div>
+            <div id="2"class="pic" onclick=tog(2)></div>
+            <div id="3"class="pic" onclick=tog(3)></div>
+            <div id="4"class="pic" onclick=tog(4)></div>
+            <div id="5"class="pic" onclick=tog(5)></div>
+            <div id="6"class="pic" onclick=tog(6)></div>
+            <div id="7"class="pic" onclick=tog(7)></div>
+            <div id="8"class="pic" onclick=tog(8)></div>
+            <div id="9"class="pic" onclick=tog(9)></div>
+        </div>
+    </div>
+    <script>
+        function show(num){
+            console.log(num)
+            var ac=document.querySelectorAll(".active");
+            ac[num].addEventListener('click',()=>{
+                ac[num].innerHTML='left for images';
+            })
+        }
+        function tog(num){
+            num=num.toString();
+            var pd=document.getElementById(num);
+            pd.id
+            pd.classList.toggle("active");
+            var ac=document.getElementById(".active");
+            
+        }
+    </script>
+</body>
+</html>

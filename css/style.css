@@ -1,0 +1,227 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+*::-webkit-scrollbar{
+    display: none;
+}
+body{
+    background: url('../img/back.svg'),linear-gradient(110deg, #f93d66, #6d47d9);
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+}
+.wrapper{
+    margin: 4% 3% 4% 3%;
+    display: grid;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-row-gap: 30px;
+}
+.nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    text-align: center;
+    grid-column-gap: 10px;
+}
+.links{
+    background-color: #ffc600;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 25px;
+    padding: 2%;
+}
+.top{   
+    text-align: center;
+    height: 420px;
+    display: grid;
+    grid-template-columns: 65% 33.6%;
+    grid-column-gap: 20px;
+}
+.l{
+    background: url('../img/l.jpg');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: start;
+}
+.r{
+    height: 420px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-row-gap: 20px;
+}
+.l p{
+    background-color: #ffc600;
+    width: max-content;
+    padding: 1%;
+    font-size: 30px;
+    font-family:"sans-serif bold";
+    margin: 15% 5%;
+}
+.l h3{
+    width: max-content;
+    background-color: #ffc600;
+    padding: 1%;
+    margin: -13% 5%;
+    font-family: "sans-serif bold";
+}
+.r1{
+    background-color: #ffc600;
+}
+.r2{
+    background-color: #ffc600;
+}
+.r1 h3 , .r2 h3{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.r1 p ,.r2 p{
+    margin-top: 10%;
+    font-size: 50px;
+    font-family: sans-serif;
+}
+/* items */
+.items{
+    height: 160px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+.item{
+    padding-top: 2%;
+    text-align: center;
+    background-color: aliceblue;
+}
+.items .item span{
+    font-size: 50px;
+}
+.items .item .name{
+    font-size: 15px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.items .item p{
+    font-size: 18px;
+}
+/* center */
+.center{
+    background-color: aliceblue;
+    height: 450px;
+}
+.center img{
+    margin-top: 5%;
+    margin-left: 4%;
+}
+.center .desc{
+    width: 400px;
+    margin-left: 32%;
+    margin-top: -13%;
+    line-height: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.center .desc a{
+    text-decoration: none;
+    color: black;
+    background-color: #ffc600;
+    padding: 2%;
+}
+.center .desc a:hover{
+    color: #ffc600;
+    background-color: black;
+    transition: 1s ease;
+}
+/* grams */
+.grams{
+    display: flex;
+    flex-direction: row;
+}
+.grams h2{
+    margin: -0.4% 1% 0% 1%;
+}
+.grams .left{
+    width:43.5%;
+    color: transparent;
+    height: 1%;
+    background: linear-gradient(to left,yellow,transparent);
+}
+.grams .right{
+    width:43.5%;
+    color: transparent;
+    height: 1%;
+    background: linear-gradient(to right,yellow,transparent);
+}
+.images{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+.pic{
+    height: 200px;
+    background: #ffc600;
+    opacity: 0.4;
+}
+.pic:hover{
+    transform: scale(1.1);
+    transition: all 1s ease;
+}
+@media screen and (max-width:720px){
+    .wrapper{
+        margin: 13px;
+    }
+    .nav .links{
+        background: none;
+    }
+    .nav .links:hover{
+        transform: scale(1.1);
+        transition: all 1s ease;
+        color: #ffc600;
+    }
+    .top{
+    grid-template-columns: 1fr ;
+    grid-row-gap: 20px;
+    }
+    .top .l{
+        height: 300px;
+    }
+    .top .r{
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 20px;
+        height: 200px;
+    }
+    .r1 p ,.r2 p{
+        margin-top: 0;
+    }
+    .items{
+        grid-template-columns: 1fr;
+        height: max-content;
+    }
+    .item{
+        height: 150px;
+    }
+    .center img{
+        width: 310px;
+        margin-top: 5%;
+        margin-left: 12%;
+    }
+    .center .desc{
+        width: 300px;
+        margin-top: -15px;
+        margin-left: 30px;
+    }
+    .grams{
+        display: grid;
+        grid-template-columns: 35% 30% 35%;
+    }
+    .grams h2{
+        font-size: 20px;
+        text-align: center;
+    }
+    .grams .left,.grams .right{
+        height: 15px;
+        width: 100%;
+    }
+    .images{
+        grid-template-columns: 1fr;
+    }
+    .pic{
+        height: 300px;
+    }
+}
